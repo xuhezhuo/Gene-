@@ -1,0 +1,25 @@
+<!--page/news/index.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="goods-container" wx:for="{{faq_top10}}">
+    <navigator url="/page/kepu/detail?id={{item.id}}">
+        <view class="goods" >
+         <view class="pic">
+         <image  src="{{item.img}}"></image>
+         </view>
+
+                         
+                         <view class="name ellipsis">
+                            <template is="wxParse" data="{{wxParseData:faqTemArray[index*2]}}"/>
+                         </view>
+                         <view class="sold">XX</view>
+
+                         <view class="price">
+                            <template is="wxParse" data="{{wxParseData:faqTemArray[index*2+1]}}"/>
+                         </view>
+                        <view class="addCart">
+                              <image src="/imgs/goods/back@2x.png"></image>
+                         </view>
+        </view>
+    </navigator>    
+</view>
+

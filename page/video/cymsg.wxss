@@ -1,0 +1,84 @@
+/* page/video/cymsg.wxss */
+.container{
+    background-color: white;
+}
+.lb{
+    font-size: 36rpx;
+    background-color: #efefef;
+    padding: 20rpx 50rpx;
+    border-bottom: solid 1px #dddddd;
+
+}
+.section image{
+    height: auto;
+    width: 24px;
+    float: left;
+    margin-right: 20px;
+}
+.section {
+	padding: 0;
+	color: #2e2e2e;
+	font-size: 30rpx;
+}
+.section .line {
+	margin-left: 30rpx;
+	padding-right: 30rpx;
+	line-height: 3;
+	border-bottom: 1px solid #efefef;
+}
+.section .line image{
+	height: 18px;
+	width: 18px;
+	margin-right: 5px;
+	margin-top: 15px;
+	
+}
+.section .line:last-child {
+	border-bottom: none;
+}
+.cell {
+	display: flex;
+    padding: 10px 10px;
+}
+.cell input{
+	height: 40px;
+	padding: 5px;
+	font-size: .9rem;
+}
+.phone{
+	display: inline-block;
+    width: 55%;
+}
+.yzm{
+    display: inline-block;
+    width: 35%;
+	/*height: 28px;*/
+	margin-top: 5px;
+	font-size: .8rem;
+}
+.yzm::after{
+    clear: both;
+}
+.birthday{
+    font-size: .9rem;
+    /*padding: 15px 10px 20px 0px;*/
+}
+.indicator{
+    height: 50px;
+    font-size: .9rem;
+}
+.lb-per{
+    padding-right: 40rpx;
+}
+.info-label{
+  padding-top: 13rpx;
+}
+.beizhu{
+  width: 80%;
+  height: 150rpx;
+  border: 1px solid #dddddd;
+  margin-left: 20rpx;
+}
+.picker{
+  padding: 10rpx 20rpx;
+}

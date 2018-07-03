@@ -1,0 +1,118 @@
+.header {
+	background: #2e65a0;
+	padding: 30rpx;
+}
+.header .avatar {
+	display: block;
+	margin: 0 auto;
+	width: 160rpx;
+	height: 160rpx;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+.header .nickname {
+	color: #000;
+	font-size: 22px;
+	line-height: 2.4;
+	text-align: center;
+}
+
+.section1 {
+	padding: 0;
+	color: #2e2e2e;
+	font-size: 30rpx;
+	background-color: #fff;
+}
+.section1 .line1 {
+	margin-left: 30rpx;
+	padding-right: 30rpx;
+	line-height: 3;
+	border-bottom: 1px solid #efefef;
+	padding: 5px 10px;
+}
+.section1 .line1 image{
+	height: 24px;
+	width: 24px;
+	margin-right: 10px;
+	margin-top: .4rem;
+	float:left;
+	
+}
+.section1 .line1 text{
+	margin-bottom: 14px;
+	
+}
+.section1 .line1:last-child {
+}
+.section1 .line1:before {
+	content: '>';
+	float: right;
+	color: #aaa;
+	margin-left: 20rpx;
+}
+.section1 .line1 .tl {
+	float: right;
+	color: #aaa;
+}
+
+/* page/mine/login.wxss */
+.section image{
+    height: auto;
+    width: 24px;
+    float: left;
+    margin-right: 20px;
+}
+.section {
+	padding: 0;
+	color: #2e2e2e;
+	font-size: 30rpx;
+}
+.section .line {
+	margin-left: 30rpx;
+	padding-right: 30rpx;
+	line-height: 3;
+	border-bottom: 1px solid #efefef;
+}
+.section .line image{
+	height: 18px;
+	width: 18px;
+	margin-right: 5px;
+	margin-top: 15px;
+	
+}
+
+.section .line:last-child {
+	border-bottom: none;
+}
+.cell {
+	display: flex;
+    padding: 10px 10px;
+}
+.cell input{
+	height: 40px;
+	padding: 5px;
+	font-size: .9rem;
+}
+.phone{
+	display: inline-block;
+    width: 55%;
+}
+.yzm{
+    display: inline-block;
+    width: 35%;
+	/*height: 28px;*/
+	margin-top: 5px;
+	font-size: .8rem;
+}
+.yzm::after{
+    clear: both;
+}
+.quit{
+	text-align: center;
+}
+.gen{
+	font-size: .9rem;
+	margin-top: 5rpx;
+	height: 40px;
+}
+

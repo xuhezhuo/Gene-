@@ -1,0 +1,80 @@
+/* page/report/report.wxss */
+.header {
+	background: #2e65a0;
+	padding: 30rpx;
+}
+.header .avatar {
+	display: block;
+	margin: 0 auto;
+	width: 160rpx;
+	height: 160rpx;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+.header .nickname {
+	color: #fff;
+	font-size: 22px;
+	line-height: 2.4;
+	text-align: center;
+}
+.report{
+    padding: 50px 10px 38px 10px;
+    background-color: #fff
+}
+.time{
+    font-size: 14px;
+    padding: 5px;
+    text-align: right;
+
+}
+.dstate{
+	font-size: 14px;
+    padding: 5px;
+    text-align: center;
+}
+.pdf{
+    padding: 20px 10px;
+}
+.pdf image {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0px 20px;
+}
+.user-info {
+    padding: 5px 10px;
+}
+.section-big {
+	padding: 20rpx;
+}
+.section-big .title {
+	position: relative;
+	text-align: center;
+	font-size: 32rpx;
+	font-weight: bold;
+	line-height: 2;
+	margin-bottom: 20rpx;
+}
+.section-big .title:before {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -180rpx;
+	width: 100rpx;
+	height: 1rpx;
+	background: #000;
+}
+.section-big .title:after {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: 80rpx;
+	width: 100rpx;
+	height: 1rpx;
+	background: #000;
+}
+.downloaded{
+	color: green;
+}

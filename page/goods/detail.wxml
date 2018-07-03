@@ -1,0 +1,24 @@
+<!--page/goods/detail.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container">
+    <view class="goods-img">
+        <image src="{{goods_info.img}}"></image>
+    </view>
+    <view class="goods-container">
+        <view class="goods" >
+            <view class="name ellipsis">
+            {{goods_info.name}}
+            <image bindtap="do_collection"  class="img" src="/imgs/goods/{{collection}}"></image>
+            </view>
+            <view wx:if="{{item.price > 0}}" class="price">￥{{item.price}}</view>
+        </view>
+    </view>
+    <view class="goods-desc">
+        <view class="title">产品介绍</view>
+        <view class="content">
+            <template is="wxParse" data="{{wxParseData:introduction.nodes}}"/>
+        </view>
+    
+    </view>
+    <view class="address">详情请联系{{tel}}</view>
+</view>

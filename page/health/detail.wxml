@@ -1,0 +1,16 @@
+<!--page/news/detail.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container">
+   
+        <view class="title">{{goods_info.name}}</view>
+        <view class="date">{{goods_info.position}}</view>
+         
+
+        <view class="content">
+        <template is="wxParse" data="{{wxParseData:desc.nodes}}"/>
+        </view>
+                 <view class="date">联系方式：{{goods_info.mobile}}</view>
+                <view class="qrcode">
+                    <image src="{{goods_info.wx_qrc}}"></image>
+                </view> 
+</view>

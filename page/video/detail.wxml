@@ -1,0 +1,12 @@
+<!--page/news/detail.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container">
+   
+        <view class="title">{{goods_info.title}}</view>
+        <view class="date">发布时间：{{date}}</view>
+        <view class="content">
+         <video class="vio" src="{{goods_info.img}}" ></video>
+         <template is="wxParse" data="{{wxParseData:introduction.nodes}}"/>
+        </view>
+           
+</view>

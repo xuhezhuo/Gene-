@@ -1,0 +1,63 @@
+{
+	"pages": [
+		"page/index/index",
+		"page/index/ihouse",
+		"page/mine/mine",
+		"page/mine/collection",
+		"page/report/report",
+		"page/goods/goods",
+		"page/goods/detail",
+		"page/faq/index",
+		"page/faq/detail",
+    "page/health/index",
+		"page/health/test",
+		"page/health/result",
+		"page/health/manager",
+		"page/health/detail",
+		"page/about/index",
+		"page/about/detail",
+		"page/video/index",
+		"page/video/detail",
+		"page/video/cymsg",
+    "page/video/checkitem",
+    "page/video/success",		
+		"page/news/index",
+		"page/news/detail",
+		"page/kepu/index",
+		"page/kepu/detail"
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#3268a3",
+		"navigationBarTextStyle": "white",
+		"backgroundColor": "#efefef",
+		"backgroundTextStyle": "dark",
+		"navigationBarTitleText": "爱基因+"
+	},
+	"tabBar": {
+		"color": "#000",
+		"selectedColor": "#4787b7",
+		"borderStyle": "black",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "page/index/index",
+				"iconPath": "imgs/tabBar/home2.png",
+				"selectedIconPath": "imgs/tabBar/home1.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "page/mine/mine",
+				"iconPath": "imgs/tabBar/my2.png",
+				"selectedIconPath": "imgs/tabBar/my1.png",
+				"text": "我的报告"
+			}
+		]
+	},
+	"networkTimeout": {
+		"request": 10000,
+		"connectSocket": 10000,
+		"uploadFile": 10000,
+		"downloadFile": 10000
+	},
+	"debug": true
+}

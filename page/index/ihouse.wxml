@@ -1,0 +1,28 @@
+<!--page/index/ihouse.wxml-->
+<view class="header">
+        <view class="hel">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{all_city}}">
+    <view class="picker">
+      {{all_city[index]}}
+      <image class="icon" src="/imgs/index/xiala@2x.png"/>
+      <text class="txt">为您找到如下爱基因小屋</text>
+    </view>
+  </picker>
+        </view>
+</view>
+<view>
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="12"  markers="{{markers}}" bindmarkertap="markertap" show-location style="width: 100%; height: {{height}}px;margin-top:100rpx"></map>
+</view>
+
+<view class="bottom" >
+    <view class="weizhi">[位置]</view>
+    <view class="addr">{{addr}}</view>
+    <image bindtap="daohang" src="/imgs/index/send@2x.png"></image>
+    
+</view>
+<view class="desc">
+{{desc}}
+</view>
+<view class="desc">
+{{contact}}
+</view>

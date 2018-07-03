@@ -1,0 +1,61 @@
+/* page/goods/goods.wxss */
+.goods-container {
+	-webkit-flex: 1;
+	background: #ffffff;
+	height: 100%;
+	background-color: #f4f4f4;
+}
+.goods-container .title {
+	padding: 20rpx 25rpx;
+	color: #646464;
+	font-size: 30rpx;
+	line-height: 30rpx;
+	background: #f7f7f7;
+}
+.goods-container .goods {
+	position: relative;
+	padding: 20rpx 30rpx;
+	font-size: 36rpx;
+	line-height: 40rpx;
+	border-bottom: 1px solid #f7f7f7;
+	margin-bottom: 40rpx;
+	background-color: #fff;
+}
+.goods-container .goods .pic {
+	float: left;
+	width: 130rpx;
+	height: 130rpx;
+	margin-right: 20rpx;
+}
+.goods-container .goods .name {
+	color: #000;
+	font-size: 36rpx;
+	line-height: 46rpx;
+}
+.goods-container .goods .sold {
+	color: #989898;
+	font-size: 30rpx;
+	line-height: 46rpx;
+	/*visibility: hidden;*/
+}
+.goods-container .goods .price {
+	color: #3773b6;
+	font-size: 36rpx;
+	line-height: 46rpx;
+}
+.goods-container .goods .addCart {
+	position: absolute;
+	right: 30rpx;
+	bottom: 30rpx;
+	width: 64rpx;
+	height: 64rpx;
+}
+.goods-container .goods .addCart image {
+	pointer-events: none;
+	position: absolute;
+	left: 20rpx;
+	/*top: 20rpx;*/
+	width: 13rpx;
+	height: 25rpx;
+}
+

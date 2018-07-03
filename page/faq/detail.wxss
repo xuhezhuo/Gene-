@@ -1,0 +1,22 @@
+/* page/faq/detail.wxss */
+.container {
+	-webkit-flex: 1;
+	background: #ffffff;
+	height: 100%;
+}
+.container .title {
+	padding: 20rpx 25rpx;
+	font-size: 36rpx;
+	/*line-height: 30rpx;*/
+    background-color: #f4f4f4;
+}	
+
+.title>view{
+	margin:5px 0; 
+}
+.container .content {
+	padding: 30rpx 25rpx;
+	font-size: 30rpx;
+	line-height: 50rpx;
+    background-color: #fff;
+}	

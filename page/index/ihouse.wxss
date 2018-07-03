@@ -1,0 +1,60 @@
+/* page/index/ihouse.wxss */
+.header {
+	position: fixed;
+	display: -webkit-flex;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 20rpx;
+	box-sizing: border-box;
+    background-color: #fff;
+	height: 50px;
+}
+.header .icon {
+	width: 19rpx;
+	height: 10rpx;
+	vertical-align: middle;
+}
+.txt{
+    color: #696c6c;
+    font-size: 0.9rem;
+    padding-left: 10px;
+}
+.hel{
+	height: 100rpx;
+}
+.bottom{
+	height: auto;
+	width: 100%;
+	display: inline-flex;
+	vertical-align: middle;
+}
+.bottom image{
+	width: 36rpx;
+	height: 36rpx;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.bottom .addr
+{
+	font-size: 0.9rem;
+	height: 100rpx;
+	margin-top: 15px;
+	color: #696c6c;
+	width: 60%;
+
+
+}
+.bottom .weizhi{
+	font-size: 0.9rem;
+	margin-top: 15px;
+	height: 100rpx;
+	padding: 0 10px;
+	width:100rpx; 
+}
+.desc
+{
+  padding: 10rpx 20rpx;
+  font-size: .8rem;
+  color: #696c6c;
+}

@@ -1,0 +1,11 @@
+<!--page/health/result.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container">
+    <view class="title">您本次的评估结果：{{score}}</view>
+    <view class="content">
+        <view>
+        结果参照详情：
+        </view>
+        <template is="wxParse" data="{{wxParseData:result.nodes}}"/>
+    </view>
+</view>

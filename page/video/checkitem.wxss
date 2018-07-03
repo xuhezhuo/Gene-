@@ -1,0 +1,45 @@
+/* page/video/checkitem.wxss */
+.container{
+    background-color: white;
+}
+.checkbox-group{
+}
+.checkbox{
+display: inline-block;
+margin-left: 60rpx;
+margin-top: 10rpx;
+}
+.checkbox1{
+display: inline-block;
+margin: 20rpx 0px 20rpx 20rpx;
+font-weight: bold;
+}
+.title{
+  font-size: 42rpx;
+  width: 100%;
+  text-align: center;
+  height: 80rpx;
+  padding: 30rpx
+}
+.lb{
+    margin-top: 20rpx;
+    font-size: 36rpx;
+    background-color: #efefef;
+    padding: 20rpx 50rpx;
+    border-bottom: solid 1px #dddddd;
+}
+.cell {
+	display: flex;
+    padding: 10px 10px;
+}
+.cell input{
+	height: 40px;
+	padding: 5px;
+	font-size: .9rem;
+}
+.beizhu{
+  width: 80%;
+  height: 150rpx;
+  border: 1px solid #dddddd;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,52 @@
+<view class="container" hidden="{{isLogin?false:true}}">
+	<view class="header">
+		<image class="avatar" src="/imgs/mine/5@2x.png" />
+		<view class="nickname">{{userInfo.nickName}}</view>
+	</view>
+	<view class="section1">
+		<navigator url="collection">
+		<view class=" line1 judgement">    
+			<image  src="/imgs/mine/shoucang@2x.png"></image>
+			<view >我的收藏</view>
+		</view>
+		</navigator>
+		
+		<navigator url="/page/report/report">
+		<view class="line1 judgement">
+		<image src="/imgs/mine/baogao1@2x.png"></image>我的报告</view>
+		</navigator>
+		
+        <view class="line1 judgement">    
+			<view  bindtap="loginout">
+			<image src="/imgs/mine/icon_7.jpg"></image>退出</view>
+		</view>
+	</view>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset" hidden="{{isLogin?true:false}}">
+  <view class="section">
+		<view class="cell line">    
+		    <image src="/imgs/mine/card_no.png"></image>
+			<input name="card_no"  placeholder="请输入样本编号" value="{{card_no}}" />
+					    <image bindtap="scan_code" style="width:28px;height:28px" src="/imgs/index/scan.png"></image>
+
+        </view>
+		<view class="cell line">
+		    <image src="/imgs/mine/user_name.png"></image>
+            <input name="user_name" placeholder="请输入姓名" value="" />
+        </view>
+        <view class="cell line">
+            <view class="phone">
+            <image src="/imgs/mine/mobile.png"></image>
+            <input bindinput="mobile_input" name="mobile" placeholder="请输入手机" />
+            </view>
+            <view class="yzm" bindtap="sendcode">{{time}} </view>
+        </view>
+        <view class="cell line">
+		    <image src="/imgs/mine/token.png"></image>
+            <input  name="check_code" placeholder="请输入验证码" />
+        </view>
+  </view>
+  <view style="padding:10px;margin-top:60rpx">
+        <button formType="submit">提 交</button>
+  </view>
+</form>

@@ -1,0 +1,39 @@
+<!--page/news/index.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="goods-container" wx:for="{{goods_top10}}">
+    <navigator url="/page/video/detail?id={{item.id}}">
+        <view class="goods" >
+                         <video class="pic" src="{{item.img}}" ></video>
+                         <view class="sold">月售</view>
+                         <view class="name ellipsis">{{item.title}}</view>
+                         <view class="price">
+                                <!--发布时间：{{item.create_time}}-->
+                         </view>
+                        <view class="addCart">
+                              <image src="/imgs/goods/back@2x.png"></image>
+                         </view>
+        </view>
+    </navigator>   
+
+</view>
+
+<!--<view class="goods-container" >
+    <navigator url="/page/video/cymsg">
+        <view class="goods" >
+                         <image class="cy" src="https://aijiyin.qykfa.com/Uploads/Picture/2017-04-28/5902aa3ca7b5c.jpg" ></image>
+                         <view class="sold">月售</view>
+                         <view class="name ellipsis">采样信息</view>
+                         <view class="price">
+
+                         </view>
+                        <view class="addCart">
+                              <image src="/imgs/goods/back@2x.png"></image>
+                         </view>
+        </view>
+    </navigator>   
+
+
+
+</view>-->
+
+

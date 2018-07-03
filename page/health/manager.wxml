@@ -1,0 +1,18 @@
+<!--page/health/manager.wxml-->
+<view class="goods-container">
+        <view class="goods" wx:for="{{master_top10}}">
+            <navigator url="/page/health/detail?id={{item.id}}">
+             <image class="pic" src="{{item.head_pic}}"></image>
+                         <view class="name ellipsis">{{item.name}}</view>
+                        <view class="sold">{{item.position}}</view>
+
+                         <view class="price">{{item.mobile}}</view>
+                        <view class="addCart">
+                              
+                         </view>
+            </navigator>
+
+
+                        
+                    </view>                  
+</view>

@@ -1,0 +1,75 @@
+<!--page/video/cymsg.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="lb">信息填写</view>
+    <view class="section">
+      <view class="cell line">
+        <image src="/imgs/mine/card_no.png"></image>
+        <input name="card_no" style="width:250rpx" placeholder="请输入样本编号" value="{{card_no}}" />
+        <image bindtap="scan_code" style="width:26px;height:26px" src="/imgs/index/scan.png"></image>
+        <label class="info-label">（点此扫码）</label>
+      </view>
+      <view class="cell line">
+        <image src="/imgs/mine/user_name.png"></image>
+        <input name="user_name" placeholder="请输入姓名" value="" />
+      </view>
+      <view class="cell line">
+        <label class="lb-per">性别</label>
+        <radio-group class="radio-group" bindchange="selectSex">
+          <label class="radio" wx:for="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+      <view class="cell line">
+        <label class="birthday">出生日期</label>
+        <picker  mode="date" value="{{date}}" start="1900-09-01" end="2020-09-01" bindchange="bindDateChange">  
+    <view class="picker">{{date}}  
+    </view>  
+  </picker>
+      </view>
+      <view class="cell line">
+        <view class="phone">
+          <image src="/imgs/mine/mobile.png"></image>
+          <input bindinput="mobile_input" name="mobile" placeholder="请输入手机" />
+        </view>
+        <view class="yzm" bindtap="sendcode">{{time}} </view>
+      </view>
+      <view class="cell line">
+        <image src="/imgs/mine/token.png"></image>
+        <input name="check_code" placeholder="请输入验证码" />
+      </view>
+      <view class="cell line">
+        <label class="lb-per">是否需要纸质报告</label>
+        <radio-group class="radio-group" bindchange="selectPer">
+          <label class="radio" wx:for="{{items1}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+      <view class="cell line">
+        <image src="/imgs/index/addr1.png"></image>
+        <input name="address" placeholder="请输入地址" />
+      </view>
+
+      <view class="cell line">
+        <image src="/imgs/index/email.png"></image>
+        <input name="email" placeholder="请输入邮箱" />
+      </view>
+      <view class="cell line">
+        <image src="/imgs/index/jigou.png"></image>
+        <input name="org" placeholder="请输入检测机构" />
+      </view>
+      <view class="cell line">
+        <view class="classname">备注</view>
+        <textarea name="remark" class="beizhu" placeholder="请输入备注" />
+      </view>
+
+    </view>
+    <view style="padding:10px;margin-top:60rpx">
+      <button formType="submit">提 交</button>
+    </view>
+  </form>
+
+
+</view>

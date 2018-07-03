@@ -1,0 +1,8 @@
+<!--page/faq/detail.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container">
+    <view class="title"><template is="wxParse" data="{{wxParseData:question.nodes}}"/></view>
+    <view class="content">
+        <template is="wxParse" data="{{wxParseData:answer.nodes}}"/>
+    </view>
+</view>

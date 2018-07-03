@@ -1,0 +1,8 @@
+<!--page/video/success.wxml-->
+<view class="container">
+  <view class="msg">您已经注册成功，您可以用自己输入的编码和姓名在小程序直接登录！</view>
+  <view style="padding:40px;margin-top:60rpx">
+    <button type="primary" bindtap="backtohome">跳回首页</button>
+
+  </view>
+</view>

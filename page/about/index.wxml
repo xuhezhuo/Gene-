@@ -1,0 +1,18 @@
+<!--page/news/index.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="goods-container" wx:for="{{goods_top10}}">
+    <navigator url="/page/about/detail?id={{item.id}}">
+        <view class="goods" >
+                         <image class="pic" src="{{item.img}}"></image>
+                         <view class="sold">月售</view>
+                         <view class="name ellipsis">{{item.title}}</view>
+                         <view class="price">
+                                <!--发布时间：{{item.create_time}}-->
+                         </view>
+                        <view class="addCart">
+                              <image src="/imgs/goods/back@2x.png"></image>
+                         </view>
+        </view>
+    </navigator>    
+</view>
+

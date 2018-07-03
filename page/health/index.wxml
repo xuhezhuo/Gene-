@@ -1,0 +1,20 @@
+<!--page/health/index.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container" wx:for="{{list}}" >
+  <view class="lb">{{item.key}}</view>
+  <view class="goods-container" wx:for="{{item.data}}" wx:for-item="vo" >
+    <navigator url="/page/health/test?id={{vo.id}}">
+      <view class="goods">
+        <view class="sold">XX</view>
+        <view class="name ellipsis">
+        {{vo.name}}
+        </view>
+        <view class="price"></view>
+        <view class="addCart">
+          <image src="/imgs/goods/back@2x.png"></image>
+        </view>
+      </view>
+
+    </navigator>
+  </view>
+</view>

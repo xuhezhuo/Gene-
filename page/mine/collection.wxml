@@ -1,0 +1,14 @@
+<!--page/mine/collection.wxml-->
+<view class="goods-container" wx:for="{{collection_list}}">
+    <navigator url="/page/goods/detail?id={{item.goods_id}}">
+        <view class="goods" >
+                         <image class="pic" src="{{item.img}}"></image>
+                         <view class="name ellipsis">{{item.goods_name}}</view>
+                        <view wx:if="{{item.price > 0}}" class="price">￥{{item.price}}</view>
+                         <view class="sold">收藏时间：{{item.create_time}}</view>
+                        <view class="addCart">
+                              <image src="/imgs/goods/back@2x.png"></image>
+                         </view>
+        </view>
+    </navigator>    
+</view>

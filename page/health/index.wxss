@@ -1,0 +1,137 @@
+/* page/health/index.wxss */
+.container{
+    background-color: white;
+}
+.lb{
+    font-size: 36rpx;
+    background-color: #efefef;
+    padding: 20rpx 50rpx;
+    border-bottom: solid 1px #dddddd;
+
+}
+.section image{
+    height: auto;
+    width: 24px;
+    float: left;
+    margin-right: 20px;
+}
+.section {
+	padding: 0;
+	color: #2e2e2e;
+	font-size: 30rpx;
+}
+.section .line {
+	margin-left: 30rpx;
+	padding-right: 30rpx;
+	line-height: 3;
+	border-bottom: 1px solid #efefef;
+}
+.section .line image{
+	height: 18px;
+	width: 18px;
+	margin-right: 5px;
+	margin-top: 15px;
+	
+}
+.section .line:last-child {
+	border-bottom: none;
+}
+.cell {
+	display: flex;
+    padding: 10px 10px;
+}
+.cell input{
+	height: 40px;
+	padding: 5px;
+	font-size: .9rem;
+}
+.phone{
+	display: inline-block;
+    width: 55%;
+}
+.yzm{
+    display: inline-block;
+    width: 35%;
+	/*height: 28px;*/
+	margin-top: 5px;
+	font-size: .8rem;
+}
+.yzm::after{
+    clear: both;
+}
+.birthday{
+    font-size: .9rem;
+    padding: 15px 10px 20px 0px;
+}
+.indicator{
+    height: 50px;
+    font-size: .9rem;
+}
+.lb-per{
+    padding-right: 40rpx;
+}
+.goods-container {
+	-webkit-flex: 1;
+	background: #ffffff;
+	height: 100%;
+	background-color: #f4f4f4;
+}
+.goods-container .title {
+	padding: 20rpx 25rpx;
+	color: #646464;
+	font-size: 30rpx;
+	line-height: 30rpx;
+	background: #f7f7f7;
+}
+.goods-container .goods {
+	position: relative;
+	padding: 20rpx 30rpx;
+	font-size: 36rpx;
+	line-height: 40rpx;
+	border-bottom: 1px solid #f7f7f7;
+	/*margin-bottom: 40rpx;*/
+	background-color: #fff;
+}
+.goods-container .goods .pic {
+	float: left;
+	width: 130rpx;
+	height: 100rpx;
+	margin-right: 20rpx;
+}
+.goods-container .goods .cy {
+	float: left;
+	width: 130rpx;
+	height: 130rpx;
+	margin-right: 20rpx;
+}
+.goods-container .goods .name {
+	color: #000;
+	font-size: 36rpx;
+	line-height: 46rpx;
+}
+.goods-container .goods .sold {
+	color: #989898;
+	font-size: 30rpx;
+	line-height: 26rpx;
+	visibility: hidden;
+}
+.goods-container .goods .price {
+	color: #a0a0a0;
+	font-size: 36rpx;
+	line-height: 46rpx;
+}
+.goods-container .goods .addCart {
+	position: absolute;
+	right: 30rpx;
+	bottom: 0rpx;
+	width: 64rpx;
+	height: 64rpx;
+}
+.goods-container .goods .addCart image {
+	pointer-events: none;
+	position: absolute;
+	left: 20rpx;
+	/*top: 20rpx;*/
+	width: 13rpx;
+	height: 25rpx;
+}

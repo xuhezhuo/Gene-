@@ -1,0 +1,51 @@
+<!--page/health/test.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container">
+  <view class="banner">
+    <view class="wel">{{que_info.name}}</view>
+  </view>
+  <view class="bottom">
+    <template is="wxParse" data="{{wxParseData:description.nodes}}" />
+  </view>
+</view>
+<view class="goods-container">
+  <form bindsubmit="formSubmit">
+    <view wx:for="{{que_items}}">
+      <view class="goods">
+        <view class="pic">
+          <image src="/imgs/faq/Qq@2x.png"></image>
+        </view>
+        <view class="name ellipsis">
+          {{item.name}}
+        </view>
+        <view class="sold">XX</view>
+
+        <view class="price" wx:if="{{item.type == 'radio'}}">
+          <radio-group class="radio-group" id="x_{{item.id}}" bindchange="bindChange">
+            <view class="checkbox" wx:for="{{item.textArray}}" wx:for-item="selector" wx:for-index="i">
+              <radio value="{{item.scoreArray[i]}}" />{{selector}}
+            </view>
+          </radio-group>
+        </view>
+
+        <view class="price" wx:else>
+          <input class="input-q" bindchange="bindChange" id="x_{{item.id}}" />
+          <lable class="unit">{{item.answer}}</lable>
+        </view>
+
+        <view class="addCart">
+
+        </view>
+      </view>
+    </view>
+
+    <view style="padding:10px;margin-top:60px">
+      <button formType="submit">提 交</button>
+    </view>
+
+  </form>
+
+
+
+
+</view>

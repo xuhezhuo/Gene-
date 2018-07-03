@@ -1,0 +1,63 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container">
+
+  <view scroll-y="true" scroll-into-view="{{scrollIntoView}}" bindscroll="onScroll">
+
+    <swiper class="banner">
+
+      <block wx:for="{{banners}}" wx:key="id">
+
+        <view class="header">
+          <view class="location" bindtap="toNearby">
+            <image class="icon" src="/imgs/index/addr.png" /> {{address}}
+          </view>
+        </view>
+        <swiper-item>
+          <image src="{{item.img}}" />
+        </swiper-item>
+      </block>
+
+    </swiper>
+    <swiper class=" icons">
+
+      <swiper-item>
+
+        <view class="item" wx:for="{{icons}}" wx:for-item="list" wx:key="id">
+          <view class="icon" wx:for="{{list}}" wx:for-item="icon" wx:key="id" bindtap="toNearby">
+            <view>
+              <navigator url="{{icon.url}}">
+                <image src="{{icon.img}}" />
+              </navigator>
+              <text>{{icon.name}}</text>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+
+    </swiper>
+
+
+    <swiper class="icons2">
+      <swiper-item>
+
+        <view wx:for="{{product}}" wx:for-item="list" wx:key="id">
+          <view class="icon" wx:for="{{list}}" wx:for-item="icon" wx:key="id" bindtap="toNearby">
+            <navigator url="{{icon.url}}">
+              <image src="{{icon.img}}" />
+            </navigator>
+
+            <text>{{icon.name}}</text>
+          </view>
+        </view>
+      </swiper-item>
+
+    </swiper>
+    <view class="footer">
+      <view class="call" bindtap="make_call">
+        <image src="/imgs/index/rexian.png"></image> {{tel}}
+      </view>
+
+    </view>
+  </view>
+
+</view>

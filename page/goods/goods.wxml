@@ -1,0 +1,15 @@
+<!--page/goods/goods.wxml-->
+<view class="goods-container" wx:for="{{goods_top10}}">
+    <navigator url="/page/goods/detail?id={{item.id}}">
+        <view class="goods" >
+                         <image class="pic" src="{{item.img}}"></image>
+                         <view class="sold">月售</view>
+                         <view class="name ellipsis">{{item.name}}</view>
+                         <view wx:if="{{item.price > 0}}" class="price">￥{{item.price}}</view>
+                        <view class="addCart">
+                              <image src="/imgs/goods/back@2x.png"></image>
+                         </view>
+        </view>
+    </navigator>    
+</view>
+

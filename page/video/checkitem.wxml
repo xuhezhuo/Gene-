@@ -1,0 +1,83 @@
+<!--page/video/checkitem.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="title">意向体检项目</view>
+    <view class="lb">特征八项A</view>
+    <checkbox-group bindchange="checkboxA">
+      <label class="checkbox1">
+        <checkbox value="体检产品A" />体检产品A
+      </label>
+    </checkbox-group>
+    <checkbox-group class="checkbox-group" bindchange="checkboxAitem">
+      <label class="checkbox" wx:for="{{items1}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </checkbox-group>
+
+    <view class="lb">肿瘤十项</view>
+    <checkbox-group bindchange="checkboxB">
+      <label class="checkbox1">
+        <checkbox value="男性守护B" />男性守护B
+      </label>
+    </checkbox-group>
+    <checkbox-group class="checkbox-group" bindchange="checkboxBitem">
+      <label class="checkbox" wx:for="{{items2}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </checkbox-group>
+
+    <checkbox-group bindchange="checkboxC">
+      <label class="checkbox1">
+        <checkbox value="女性关爱C" />女性关爱C
+      </label>
+    </checkbox-group>
+    <checkbox-group class="checkbox-group" bindchange="checkboxCitem">
+      <label class="checkbox" wx:for="{{items3}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </checkbox-group>
+
+    <checkbox-group bindchange="checkboxD">
+      <label class="checkbox1">
+        <checkbox value="癌症防御D" />癌症防御D
+      </label>
+    </checkbox-group>
+    <checkbox-group class="checkbox-group" bindchange="checkboxDitem">
+      <label class="checkbox" wx:for="{{items4}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </checkbox-group>
+
+    <view class="lb">慢病</view>
+
+    <checkbox-group bindchange="checkboxE">
+      <label class="checkbox1">
+        <checkbox value="四高E" />四高E
+      </label>
+    </checkbox-group>
+    <checkbox-group class="checkbox-group" bindchange="checkboxEitem">
+      <label class="checkbox" wx:for="{{items5}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </checkbox-group>
+    <checkbox-group bindchange="checkboxF">
+      <label class="checkbox1">
+        <checkbox value="心脑防护F" />心脑防护F
+      </label>
+    </checkbox-group>
+    <checkbox-group class="checkbox-group" bindchange="checkboxFitem">
+      <label class="checkbox" wx:for="{{items6}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </checkbox-group>
+
+    <view class="cell line">
+        <view class="classname">备注</view>
+        <textarea name="remark1" class="beizhu" placeholder="请输入备注" />
+      </view>
+    <view style="padding:10px;margin-top:60rpx">
+      <button formType="submit">提 交</button>
+    </view>
+  </form>
+
+</view>

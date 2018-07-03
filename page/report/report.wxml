@@ -1,0 +1,55 @@
+<view class="container" hidden="{{isLogin?false:true}}">
+	<view class="header">
+		<view class="nickname">欢迎您! {{user_name}} </view>
+	</view>
+  
+
+  <view wx:if="{{file_url != 'NULL'}}"> 
+  <view class="section section-big discount" >
+			 <view class="pdf" bindtap="download_pdf" >
+            <image src="/imgs/mine/download@2x.png"></image>
+            
+            <view class="name {{is_download}}">{{card_no}}-{{user_name}}.pdf</view>
+        </view>
+        <view class="dstate">{{dstate}}</view>
+        
+        <view class="time">{{create_time}}</view>
+			
+		</view>
+   </view>
+
+    
+
+
+        <view class="section section-big discount">
+			<view class="user-info">
+                <label>样本编号：{{card_no}}</label>
+            </view>
+             <view class="user-info">
+                <label>姓名：{{user_name}}</label>
+            </view>
+            <view class="user-info">
+                <label>手机号码：{{mobile}}</label>
+            </view>
+             <view class="user-info">
+                <label>性别：{{sex}}</label>
+            </view>
+            <view class="user-info">
+                <label>出生日期：{{birthday}}</label>
+            </view>
+            <view class="user-info">
+                <label>是否需要纸质报告：{{need_per}}</label>
+            </view>
+            <view class="user-info">
+                <label>地址：{{address}}</label>
+            </view>
+            <view class="user-info">
+                <label>email：{{email}}</label>
+            </view>
+            <view class="user-info">
+                <label>检测机构：{{org}}</label>
+            </view>
+            
+		</view>
+
+</view>

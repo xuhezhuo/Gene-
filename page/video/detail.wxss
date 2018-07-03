@@ -1,0 +1,35 @@
+/* page/vedio/detail.wxss */
+.container{
+	background-color: #fff;
+}
+.container .title {
+	padding: 20rpx 25rpx;
+	font-size: 36rpx;
+	/*line-height: 30rpx;*/
+    /*background-color: #f4f4f4;*/
+    text-align: center;
+    font-weight: bold;
+}	
+.img image{
+    height: 400rpx;
+    width: 100%;
+}
+
+.title>view{
+	margin:5px 0; 
+}
+.container .content {
+	padding: 30rpx 25rpx;
+	font-size: 30rpx;
+	line-height: 50rpx;
+    background-color: #fff;
+}	
+.date
+{
+    text-align: center;
+	font-size: 24rpx;	
+}	
+.vio{
+	width: 100%;
+}
+
